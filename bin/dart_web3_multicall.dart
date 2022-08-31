@@ -8,7 +8,7 @@ var apiUrl = "https://data-seed-prebsc-1-s1.binance.org:8545"; //Replace with yo
 
 var httpClient = Client();
 var ethClient = Web3Client(apiUrl, httpClient);
-var multicallContract = EthereumAddress.fromHex("0x7aa35985B617416F502afC69b25aB9dBF7FDd0a1");
+var multicallContract = EthereumAddress.fromHex("0xae11c5b5f29a6a25e955f0cb8ddcc416f522af5c");
 
 var token = EthereumAddress.fromHex("0x8085c02665f2BC0975Bd69C747D1918c3154e5c0");
 var user = EthereumAddress.fromHex("0x7dedcd37ad8d65c4c01b522e30060836ffbf81bb");
@@ -20,6 +20,19 @@ void main(List<String> arguments) async {
   print(tokenDetails);
 
   List<fake_data.Token> tokensList = fake_data.fakeTokensList();
-  List<dynamic> balanceOfs = await multicall.getBalanceMultiTokens(ethClient, multicallContract, tokensList, user);
-  print(balanceOfs);
+  List<dynamic> balanceOfsResult = await multicall.getBalanceMultiTokens(ethClient, multicallContract, tokensList, user);
+  List<dynamic> balanceOfs = balanceOfsResult.sublist(1).first;
+
+  List<fake_data.Token> tokensWithBalanceOfs = List<fake_data.Token>.from(tokensList.map((token) {
+    token.setBalance(balanceOfs[tokensList.indexOf(token)]);
+    return token;
+  }));
+
+  for (var token in tokensWithBalanceOfs) {
+    print(" >> token address: ${token.address}");
+    print(" >> user: $user");
+    print(" >> bigBalanceOf: ${token.bigBalanceOf.toInt()}");
+    print(" >> balanceOf: ${token.balanceOf}");
+    print(" >>> ============ >>>>>>");
+  }
 }
