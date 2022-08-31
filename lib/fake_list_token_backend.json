@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "address": "0x4f32336a6032ba3763d533853224f743b3c8ee88",
+    "decimals": 5,
+    "chain": "TESTNET",
+    "logo": null,
+    "createdAt": "2022-07-02T06:01:41.396Z",
+    "updatedAt": "2022-07-02T06:01:41.396Z",
+    "id": "62bfdf458eb34bb851edcaf1"
+  },
+  {
+    "name": "Bitcoin",
+    "symbol": "BTC",
+    "address": "0xfe3b35340c2222e138290760ad5351261c7113c1",
+    "decimals": 5,
+    "chain": "TESTNET",
+    "logo": null,
+    "createdAt": "2022-07-02T06:01:42.095Z",
+    "updatedAt": "2022-07-02T06:01:42.095Z",
+    "id": "62bfdf468eb34bf675edcaf4"
+  },
+  {
+    "name": "Solana",
+    "symbol": "SOL",
+    "address": "0x989badc996503a0afb82727e978fe6eb32c74582",
+    "decimals": 5,
+    "chain": "TESTNET",
+    "logo": null,
+    "createdAt": "2022-07-02T06:01:42.306Z",
+    "updatedAt": "2022-07-02T06:01:42.307Z",
+    "id": "62bfdf468eb34b519bedcaf5"
+  },
+  {
+    "name": "Cardano",
+    "symbol": "ADA",
+    "address": "0xd519f992bb6672a66de9d54d5c2a54f0bde727e3",
+    "decimals": 5,
+    "chain": "TESTNET",
+    "logo": null,
+    "createdAt": "2022-07-02T06:01:41.885Z",
+    "updatedAt": "2022-07-02T06:01:41.885Z",
+    "id": "62bfdf458eb34b6fb8edcaf3"
+  },
+  {
+    "name": "BNB",
+    "symbol": "BNB",
+    "address": "0x69c1ee89e50709755753ffbc3c99c4f6ce67d572",
+    "decimals": 5,
+    "chain": "TESTNET",
+    "logo": null,
+    "createdAt": "2022-07-02T06:01:41.620Z",
+    "updatedAt": "2022-07-02T06:01:41.620Z",
+    "id": "62bfdf458eb34b229cedcaf2"
+  },
+  {
+    "name": "U-BAM-Public",
+    "symbol": "UBAM",
+    "address": "0x8085c02665f2bc0975bd69c747d1918c3154e5c0",
+    "decimals": 18,
+    "chain": "TESTNET",
+    "logo": "https://cdn.bamwallet.io/USD-B.png",
+    "createdAt": "2022-08-18T10:15:14.081Z",
+    "updatedAt": "2022-08-18T10:17:58.740Z",
+    "id": "62fe11324fbfd573bc0a74ba"
+  }
+]
